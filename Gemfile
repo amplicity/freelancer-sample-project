@@ -52,7 +52,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
 gem 'better_errors' # more comfortable errors view
 gem 'annotate'
-
+gem 'dotenv'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
