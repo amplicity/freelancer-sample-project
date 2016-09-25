@@ -22,6 +22,7 @@ App.angular.config([
         )
 
     $stateProvider
+    # home is loaded first by default
       .state('home',
         url: '/home'
         templateUrl: 'controllers/events/_events.html'
