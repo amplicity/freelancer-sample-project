@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-app="tasks">
+    <div ng-include="'controllers/nav/_nav.html'" ></div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <ui-view></ui-view>
+      </div>
+    </div>
+</body>
+</html>
