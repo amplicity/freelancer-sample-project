@@ -26,6 +26,7 @@ App.angular.config (NotificationProvider) =>
 
 App.angular.config(['$httpProvider',
     ($httpProvider, paginationTemplateProvider)->
+      # set httpProvider to use convertDateStringsToDates
       $httpProvider.defaults.transformResponse.push((responseData)->
         convertDateStringsToDates(responseData)
         responseData
